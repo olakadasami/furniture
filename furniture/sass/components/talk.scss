@@ -1,0 +1,54 @@
+@use '../abstract/' as *;
+
+.talk {
+    padding: 7rem;
+    
+    @include large {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        padding: 14rem;
+    }
+
+
+    &__img {
+        width: 80%;
+        margin-bottom: 10rem;
+
+        @include large {
+            margin: 0 auto;
+            width: 70%;
+        }
+
+        img {
+            width: 100%;
+        }
+    }
+
+    &__text {
+        
+        max-width: 80%;
+        margin: 0 auto;
+
+        @include large {
+            width: 80%;
+        }
+
+        &--heading {
+            font-size: 4rem;
+            color: $color-black;
+            margin-bottom: 2rem;
+        }
+
+        &--text {
+            line-height: 1.5;
+            letter-spacing: .1rem;
+            margin-bottom: 1.5rem;
+            
+
+            @include large {
+                max-width: 80%;
+            }
+        }
+    }
+}

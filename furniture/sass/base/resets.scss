@@ -1,0 +1,28 @@
+@use '../abstract/' as *;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+    
+}
+
+a,
+a:visited,
+a:focus {
+    color: $color-black;
+    text-decoration: none;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    box-sizing: border-box;
+    
+}
+
+h1,h2,h3,h4 {
+    color: $color-black
+}

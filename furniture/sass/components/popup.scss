@@ -1,0 +1,51 @@
+@use '../abstract/' as *;
+
+
+.popup {
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: $color-yellow;
+    opacity: 0;
+    z-index: 100;
+    visibility: hidden;
+    transition: all .3s;
+
+    &:target {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    &-close {
+        &:visited,
+        &:link {
+            position: absolute;
+            top: 3.5rem;
+            right: 3.5rem;
+        }
+    }
+
+    &__btns {
+        max-width: 70%;
+        margin: 0 auto;
+        padding: 15rem 0rem;
+        text-align: center;
+
+        a {
+            text-transform: uppercase;
+            width: 100%;
+            text-align: center;
+            margin-bottom: 3rem;
+            justify-content: center;
+            color: $color-white;
+            font-size: 1.6rem;
+            letter-spacing: .1rem;
+        }
+
+        .btn-block {
+            padding: 3rem;
+        }
+    }
+}

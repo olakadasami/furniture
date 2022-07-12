@@ -1,0 +1,22 @@
+@use '../abstract/' as *;
+
+
+
+
+body {
+    font-family: Helvetica, sans-serif;
+    font-size: 1.6rem;
+    color: $color-dark;
+    background-color: $color-white;
+    position: relative;
+
+}
+
+.header {
+    
+    &__logo {
+        h1 {
+            font-size: 3rem;
+        }
+    }
+}

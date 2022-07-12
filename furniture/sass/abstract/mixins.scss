@@ -1,0 +1,40 @@
+// big smartphones and small tablets
+$breakpoints-sm: 426px; 
+
+// small tablets landscape smartphones
+$breakpoints-mid: 610px;
+
+// Tablets and small laptops
+$breakpoints-large: 900px;
+
+// laptops and desktops
+$breakpoints-xlarge: 1200px;
+
+
+// small devices
+@mixin small {
+    @media screen and (min-width: #{$breakpoints-sm}) {
+        @content;
+    }
+}
+
+// small tablets
+@mixin medium {
+    @media screen and (min-width: #{$breakpoints-mid}) {
+        @content;
+    }
+}
+
+// big tablets and small laptops
+@mixin large {
+    @media screen and (min-width: #{$breakpoints-large}) {
+        @content;
+    }
+}
+
+// laptops and desktops
+@mixin xlarge {
+    @media screen and (min-width: #{$breakpoints-xlarge}) {
+        @content;
+    }
+}

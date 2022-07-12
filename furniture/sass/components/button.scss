@@ -1,0 +1,62 @@
+@use '../abstract/' as *;
+
+.btn {
+    display: inline-flex;
+    padding: .8rem 2rem;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: bold;
+    border-radius: 1rem;
+    transition: all .2s ease-in;
+
+
+    
+    &-red {
+        background-color: $color-yellow;
+        box-shadow: .2rem .2rem 1rem rgba($color-black, .8);
+    
+    
+        &:hover {
+            background-color: $color-pink;
+            color: $color-white;
+            transform: translateY(-.3rem);
+        }
+    
+        &:focus {
+            transform: translateY(-.15rem);
+    
+        }
+    }
+
+    &-black {
+         background-color: $color-black;
+         color: $color-white;
+         padding: 2rem 4rem;
+
+         &:hover {
+            transform: translateY(-.3rem);
+            box-shadow: .2rem .2rem 1rem rgba($color-black, .8);
+
+        }
+
+        &:focus {
+            transform: translateY(-.15rem);
+        }
+    
+    }
+    &-pink {
+        background-color: $color-pink;
+        padding: 2rem 4rem;
+
+        &:hover {
+            transform: translateY(-.3rem);
+            box-shadow: .2rem .2rem 1rem rgba($color-black, .8);
+
+        }
+
+        &:focus {
+            transform: translateY(-.15rem);
+        }
+    }
+
+}

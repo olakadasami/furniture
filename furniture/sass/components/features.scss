@@ -1,0 +1,73 @@
+@use '../abstract/' as *;
+
+.feature {
+    text-align: center;
+    padding: 4rem 2rem;
+    position: relative;
+
+
+
+    &__items {
+        margin: 4rem 0;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-items: center;
+
+        @include medium {
+            margin-top: 10rem;
+        }
+    }
+
+    &__item {
+        margin-top: 3rem;
+        padding: 2rem;
+        width: 80%;
+
+        @include small {
+            width: 60%;
+        }
+        @include large {
+            width: 40%;
+        }
+        @include xlarge {
+            width: 25%;
+        }
+    }
+
+    &__img {
+        border: solid .8rem $color-yellow;
+        border-radius: 50%;
+        padding: 1.5rem;
+    }
+
+    &__heading {
+        margin: 2rem 0;
+    }
+
+}
+
+.features__img {
+    display: none;
+
+    @include xlarge {
+        display: block;
+        position: absolute;
+        top: 20%;
+        height: 30rem;
+    
+        img {
+            height: 100%;
+    
+        }
+        
+        &--right {
+            right: 0;
+        }
+        &--left {
+            left: 0;
+        }
+    }
+
+}
+

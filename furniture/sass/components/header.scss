@@ -1,0 +1,113 @@
+@use '../abstract/' as *;
+
+.header {
+    background-color: $color-yellow;
+    color: $color-dark;
+    height: 75vh;
+    position: relative;
+    margin-bottom: 6rem;
+
+    @include medium{
+        height: 90vh;
+    }
+    @include large {
+        height: 100vh;
+    }
+
+    &__logo {
+        display: flex;
+        align-items: center;
+
+        &:hover {
+            opacity: 0.8;
+        }
+
+        &--icon {
+            width: 2rem;
+
+            img {
+                width: 100%;
+            }
+        }
+
+        h1 {
+            margin-left: .8rem;
+        }
+    }
+
+    .main-nav {
+        display: none;
+
+        @include large {
+            display: flex;
+            justify-content: space-between;
+            width: 55vw;
+
+            .btn-block {
+                color: $color-white;
+                transform: none;
+                box-shadow: none;
+            }
+
+            a {
+                opacity: 1;
+                
+                &:hover {
+                    opacity: 0.8;
+                }
+            }
+        }
+
+        @include xlarge {
+            width: 40vw;
+        }
+    }
+    
+    
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 2rem;
+        box-shadow: 0 .2rem 2rem rgba($color-black, 0.8);
+    }
+
+    &__nav {
+        @include large {
+            display: none;
+        }
+    }
+
+    .hero-images {
+
+        .hero-img {
+            margin: 0 auto;
+            position: absolute;
+            bottom: -7%;
+            left: 50%;
+            transform: translateX(-50%);
+
+            &-1 {
+                width: 85%;
+            }
+            &-2 {
+                width: 50%;
+
+                @include small {
+                    width: 35%;
+                }
+                @include medium {
+                    width: 25%;
+                }
+                @include large {
+                    width: 20%;
+                }
+            }
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+}

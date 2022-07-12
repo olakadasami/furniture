@@ -1,0 +1,51 @@
+@use '../abstract/' as *;
+
+
+.sponsors {
+    background-color: $color-black;
+    color: $color-white;
+    text-align: center;
+    padding: 5rem 4rem;
+
+    &__heading {
+        color: $color-yellow;
+        font-size: 4rem;
+    }
+
+    &__text {
+        padding: 3rem 0;
+        font-size: 1.4rem;
+        line-height: 1.5;
+        text-align: center;
+        max-width: 70rem;
+        margin: 0 auto;
+    }
+
+    &__group {
+        padding: 2rem;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 4rem;
+        justify-content: center;
+        max-width: 90rem;
+        margin: 0 auto;
+    }
+
+    &__item {
+        height: 13.6rem;
+        background-color: #fff;
+        border-radius: 1rem;
+        overflow: hidden;
+        display: grid;
+        place-items: center;
+        justify-content: center;
+        width: 13.6rem;
+
+
+        img {
+            width: 70%;
+            margin: auto;
+        }
+
+    }
+}
